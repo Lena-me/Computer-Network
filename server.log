@@ -1,0 +1,14 @@
+2025-03-23 18:14:45,683 - INFO - Server started on port 2525
+2025-03-23 18:15:26,660 - INFO - Connected by ('172.20.10.8', 59582)
+2025-03-23 18:15:26,661 - INFO - User ID received: 1
+2025-03-23 18:15:26,665 - INFO - Password received for user 1
+2025-03-23 18:15:26,665 - INFO - User 1 authenticated successfully
+2025-03-23 18:15:28,495 - INFO - Request received: BALA
+2025-03-23 18:15:28,495 - INFO - Balance queried for user 1: 361
+2025-03-23 18:15:30,509 - INFO - Request received: WDRA 3
+2025-03-23 18:15:30,509 - INFO - Withdrawal successful for user 1. Amount: 3, New Balance: 358
+2025-03-23 18:15:32,973 - INFO - Request received: BALA
+2025-03-23 18:15:32,974 - INFO - Balance queried for user 1: 358
+2025-03-23 18:15:34,689 - INFO - Request received: BYE
+2025-03-23 18:15:34,689 - INFO - User 1 disconnected
+2025-03-23 18:15:34,690 - INFO - Disconnected by ('172.20.10.8', 59582)
