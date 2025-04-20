@@ -27,12 +27,12 @@ def send_login():
         client_socket.sendall(f"HELO {userid}\n".encode())
         response = client_socket.recv(1024).decode()
 
-        if response == "500 sp AUTH REQUIRED\n":
+        if response == "500 AUTH REQUIRE":
             logging.info("Authentication required. Sending password.")
             client_socket.sendall(f"PASS {password}\n".encode())
             response = client_socket.recv(1024).decode()
 
-            if response == "525 sp OK!\n":
+            if response == "525 sp OK!":
                 logging.info("Login successful.")
                 messagebox.showinfo("Login", "Login successful!")
                 show_operations()  # 显示操作界面
@@ -73,25 +73,25 @@ def send_request(request):
     logging.info(f"Sending request: {request}")
     try:
         if request == "BALA":
-            client_socket.sendall(b"BALA\n")
+            client_socket.sendall(b"BALA")
             response = client_socket.recv(1024).decode()
             logging.info(f"Received balance response: {response}")
             messagebox.showinfo("Balance", response)
         elif request == "WDRA":
             amount = amount_entry.get()
-            client_socket.sendall(f"WDRA {amount}\n".encode())
+            client_socket.sendall(f"WDRA {amount}".encode())
             response = client_socket.recv(1024).decode()
             if response.startswith("525 sp OK!"):
 
                 logging.info(f"Withdrawal successful.")
-                messagebox.showinfo("Withdrawal", f"525 sp OK!\n")
+                messagebox.showinfo("Withdrawal", f"525 sp OK!")
             else:
                 logging.error(f"Withdrawal failed: {response}")
                 messagebox.showerror("Withdrawal", response)
 
 
         elif request == "BYE":
-            client_socket.sendall(b"BYE\n")
+            client_socket.sendall(b"BYE-=")
             response = client_socket.recv(1024).decode()
             logging.info(f"Received exit response: {response}")
             messagebox.showinfo("Exit", response)
