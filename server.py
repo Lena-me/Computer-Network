@@ -12,23 +12,24 @@ USER_FILE = 'users.json'
 
 # 加载用户数据
 def load_users():
-    try:
-        with open(USER_FILE, 'r') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        # 如果文件不存在，返回默认用户数据
-        return {
-            'user1': {'password': 'pass1', 'balance': 1000},
-            'user2': {'password': 'pass2', 'balance': 2000}
-        }
+    with open(USER_FILE, 'r') as f:
+        return json.load(f)
+
 
 # 保存用户数据
 def save_users(users):
     with open(USER_FILE, 'w') as f:
         json.dump(users, f, indent=4)
 
+
+# 验证用户 ID 是否存在
+def is_user_exists(userid, users):
+    return userid in users
+
+
 # 初始化用户数据
 users = load_users()
+
 
 def handle_client(conn, addr):
     logging.info(f"Connected by {addr}")
@@ -41,20 +42,20 @@ def handle_client(conn, addr):
             userid = data.split()[1]  # 提取 user1
             logging.info(f"User ID received: {userid}")
 
-            # 验证用户ID
-            if userid in users:
+            # 验证用户 ID 是否存在
+            if is_user_exists(userid, users):
                 current_user = userid
-                conn.sendall(b"500 sp AUTH REQUIRED\n")
+                conn.sendall(b"500 AUTH REQUIRE")
 
                 # 接收客户端发送的 PASS 请求
                 data = conn.recv(1024).decode().strip()
                 if data.startswith("PASS"):
                     password = data.split()[1]  # 提取 password
-                    logging.info(f"Password received for user {userid}")
+                    logging.info(f"Password {password}received for user {userid}")
 
                     # 验证密码
                     if password == users[userid]['password']:
-                        conn.sendall(b"525 sp OK!\n")
+                        conn.sendall(b"525 OK!")
                         logging.info(f"User {userid} authenticated successfully")
 
                         # 处理客户端请求
@@ -77,37 +78,37 @@ def handle_client(conn, addr):
                                     amount = int(data.split()[1])
                                     if amount <= users[userid]['balance']:
                                         users[userid]['balance'] -= amount
-                                        conn.sendall(b"525 sp OK!\n")
+                                        conn.sendall(b"525 OK!")
                                         logging.info(
                                             f"Withdrawal successful for user {userid}. Amount: {amount}, New Balance: {users[userid]['balance']}")
                                         save_users(users)  # 更新用户数据文件
                                     else:
-                                        conn.sendall(b"401 sp ERROR!\n")
+                                        conn.sendall(b"401 ERROR!")
                                         logging.warning(
                                             f"Insufficient balance for user {userid}. Requested amount: {amount}")
                                 except (IndexError, ValueError):
-                                    conn.sendall(b"401 sp ERROR!\n")
+                                    conn.sendall(b"401 ERROR!")
                                     logging.warning(f"Invalid WDRA request format: {data}")
                             elif data == "BYE":
                                 logging.info(f"User {userid} disconnected")
-                                conn.sendall(b"BYE\n")
-
+                                conn.sendall(b"BYE")
                                 break
                             else:
-                                conn.sendall(b"401 sp ERROR!\n")
+                                conn.sendall(b"401 ERROR!")
                                 logging.warning(f"Unknown request: {data}")
                     else:
-                        conn.sendall(b"401 sp ERROR!\n")
+                        conn.sendall(b"401 ERROR!")
                         logging.warning(f"Authentication failed for user {userid}")
                 else:
-                    conn.sendall(b"401 sp ERROR!\n")
+                    conn.sendall(b"401 ERROR!")
                     logging.warning(f"Invalid password format for user {userid}")
             else:
-                conn.sendall(b"401 sp ERROR!\n")
+                conn.sendall(b"401 ERROR!")
                 logging.warning(f"Invalid user ID: {userid}")
     finally:
         conn.close()
         logging.info(f"Disconnected by {addr}")
+
 
 def start_server():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -117,6 +118,7 @@ def start_server():
         while True:
             conn, addr = s.accept()
             threading.Thread(target=handle_client, args=(conn, addr)).start()
+
 
 if __name__ == "__main__":
     start_server()
