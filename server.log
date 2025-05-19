@@ -12,3 +12,254 @@
 2025-03-23 18:15:34,689 - INFO - Request received: BYE
 2025-03-23 18:15:34,689 - INFO - User 1 disconnected
 2025-03-23 18:15:34,690 - INFO - Disconnected by ('172.20.10.8', 59582)
+2025-04-20 16:18:39,691 - INFO - Server started on port 2525
+2025-04-20 16:19:20,404 - INFO - Connected by ('172.20.10.8', 64675)
+2025-04-20 16:19:20,405 - INFO - User ID received: user1
+2025-04-20 16:19:20,410 - INFO - Password received for user user1
+2025-04-20 16:19:20,410 - INFO - User user1 authenticated successfully
+2025-04-20 16:19:24,040 - INFO - Request received: BALA
+2025-04-20 16:19:24,041 - INFO - Balance queried for user user1: 100000
+2025-04-20 16:19:27,133 - INFO - Request received: WDRA 2324
+2025-04-20 16:19:27,134 - INFO - Withdrawal successful for user user1. Amount: 2324, New Balance: 97676
+2025-04-20 16:19:29,147 - INFO - Request received: BALA
+2025-04-20 16:19:29,147 - INFO - Balance queried for user user1: 97676
+2025-04-20 16:19:50,123 - INFO - Request received: WDRA 32432
+2025-04-20 16:19:50,123 - INFO - Withdrawal successful for user user1. Amount: 32432, New Balance: 65244
+2025-04-20 16:19:52,909 - INFO - Request received: BALA
+2025-04-20 16:19:52,909 - INFO - Balance queried for user user1: 65244
+2025-04-20 16:20:01,894 - INFO - Request received: BYE
+2025-04-20 16:20:01,894 - INFO - User user1 disconnected
+2025-04-20 16:20:01,894 - INFO - Disconnected by ('172.20.10.8', 64675)
+2025-04-20 16:27:28,578 - INFO - Connected by ('172.20.10.10', 51257)
+2025-04-20 16:27:28,581 - INFO - Connected by ('172.20.10.10', 51258)
+2025-04-20 16:27:31,840 - INFO - Disconnected by ('172.20.10.10', 51257)
+2025-04-20 16:28:04,506 - INFO - User ID received: user1
+2025-04-20 16:28:05,632 - WARNING - Invalid password format for user user1
+2025-04-20 16:28:05,633 - INFO - Disconnected by ('172.20.10.10', 51258)
+2025-04-20 16:28:11,222 - INFO - Connected by ('172.20.10.10', 51283)
+2025-04-20 16:28:21,096 - INFO - User ID received: user1
+2025-04-20 16:28:21,709 - WARNING - Invalid password format for user user1
+2025-04-20 16:28:21,709 - INFO - Disconnected by ('172.20.10.10', 51283)
+2025-04-20 16:29:08,816 - INFO - Connected by ('172.20.10.10', 51321)
+2025-04-20 16:31:50,194 - INFO - Disconnected by ('172.20.10.10', 51321)
+2025-04-20 16:32:13,063 - INFO - Server started on port 2525
+2025-04-20 16:34:07,062 - INFO - Server started on port 2525
+2025-04-20 16:40:09,376 - INFO - Connected by ('192.168.27.40', 51873)
+2025-04-20 16:40:19,000 - INFO - User ID received: user1
+2025-04-20 16:40:19,906 - WARNING - Invalid password format for user user1
+2025-04-20 16:40:19,906 - INFO - Disconnected by ('192.168.27.40', 51873)
+2025-04-20 16:43:28,862 - INFO - Server started on port 2525
+2025-04-20 16:43:44,899 - INFO - Server started on port 2525
+2025-04-20 16:44:27,550 - INFO - Connected by ('192.168.27.141', 59100)
+2025-04-20 16:44:27,550 - INFO - User ID received: user1
+2025-04-20 16:44:27,566 - INFO - Password received for user user1
+2025-04-20 16:44:27,566 - INFO - User user1 authenticated successfully
+2025-04-20 16:44:50,755 - INFO - Connected by ('192.168.27.40', 52032)
+2025-04-20 16:44:56,278 - INFO - User ID received: user1
+2025-04-20 16:45:22,403 - WARNING - Invalid password format for user user1
+2025-04-20 16:45:22,404 - INFO - Disconnected by ('192.168.27.40', 52032)
+2025-04-20 16:45:28,847 - INFO - Request received: WDRA 666
+2025-04-20 16:45:28,848 - INFO - Withdrawal successful for user user1. Amount: 666, New Balance: 99334
+2025-04-20 16:45:30,478 - INFO - Request received: BALA
+2025-04-20 16:45:30,480 - INFO - Balance queried for user user1: 99334
+2025-04-20 16:46:26,998 - INFO - Disconnected by ('192.168.27.141', 59100)
+2025-04-20 16:48:35,556 - INFO - Server started on port 2525
+2025-04-20 16:49:15,313 - INFO - Server started on port 2525
+2025-04-20 16:49:22,222 - INFO - Connected by ('192.168.27.40', 52175)
+2025-04-20 16:49:28,365 - INFO - User ID received: user1
+2025-04-20 16:49:29,077 - WARNING - Invalid password format for user user1
+2025-04-20 16:49:29,078 - INFO - Disconnected by ('192.168.27.40', 52175)
+2025-04-20 16:49:45,266 - INFO - Connected by ('192.168.27.40', 52189)
+2025-04-20 16:49:55,804 - INFO - User ID received: user1
+2025-04-20 16:49:56,425 - WARNING - Invalid password format for user user1
+2025-04-20 16:49:56,425 - INFO - Disconnected by ('192.168.27.40', 52189)
+2025-04-20 16:51:32,160 - INFO - Connected by ('192.168.27.40', 52241)
+2025-04-20 16:51:45,899 - INFO - User ID received: user1
+2025-04-20 16:51:47,112 - WARNING - Invalid password format for user user1
+2025-04-20 16:51:47,113 - INFO - Disconnected by ('192.168.27.40', 52241)
+2025-04-20 16:54:53,589 - INFO - Server started on port 2525
+2025-04-20 16:55:25,062 - INFO - Connected by ('192.168.27.141', 56093)
+2025-04-20 16:55:25,064 - INFO - User ID received: user1
+2025-04-20 16:55:25,080 - INFO - Password received for user user1
+2025-04-20 16:55:25,080 - INFO - User user1 authenticated successfully
+2025-04-20 16:55:28,705 - INFO - Request received: WDRA 22
+2025-04-20 16:55:28,705 - INFO - Withdrawal successful for user user1. Amount: 22, New Balance: 99312
+2025-04-20 16:55:31,159 - INFO - Request received: BYE
+2025-04-20 16:55:31,160 - INFO - User user1 disconnected
+2025-04-20 16:55:31,160 - INFO - Disconnected by ('192.168.27.141', 56093)
+2025-04-20 16:57:38,012 - INFO - Server started on port 2525
+2025-04-20 16:57:45,814 - INFO - Server started on port 2525
+2025-04-20 16:57:50,678 - INFO - Connected by ('192.168.27.40', 52420)
+2025-04-20 16:57:57,595 - INFO - User ID received: user1
+2025-04-20 16:58:08,523 - WARNING - Invalid password format for user user1
+2025-04-20 16:58:08,524 - INFO - Disconnected by ('192.168.27.40', 52420)
+2025-04-20 16:59:03,761 - INFO - Connected by ('192.168.27.141', 57021)
+2025-04-20 16:59:03,767 - INFO - User ID received: test
+2025-04-20 16:59:03,767 - WARNING - Invalid user ID: test
+2025-04-20 16:59:03,767 - INFO - Disconnected by ('192.168.27.141', 57021)
+2025-04-20 16:59:33,139 - INFO - Connected by ('192.168.27.40', 52492)
+2025-04-20 16:59:34,977 - INFO - Disconnected by ('192.168.27.40', 52492)
+2025-04-20 16:59:37,186 - INFO - Connected by ('192.168.27.40', 52502)
+2025-04-20 16:59:45,111 - INFO - User ID received: user1
+2025-04-20 16:59:45,932 - WARNING - Invalid password format for user user1
+2025-04-20 16:59:45,932 - INFO - Disconnected by ('192.168.27.40', 52502)
+2025-04-20 17:01:52,401 - INFO - Connected by ('192.168.27.40', 52645)
+2025-04-20 17:01:58,542 - INFO - User ID received: user1
+2025-04-20 17:02:01,407 - WARNING - Invalid password format for user user1
+2025-04-20 17:02:01,407 - INFO - Disconnected by ('192.168.27.40', 52645)
+2025-04-20 17:04:28,254 - INFO - Connected by ('192.168.27.40', 52701)
+2025-04-20 17:04:29,380 - INFO - Disconnected by ('192.168.27.40', 52701)
+2025-04-20 17:04:57,113 - INFO - Server started on port 2525
+2025-04-20 17:05:46,181 - INFO - Server started on port 2525
+2025-04-20 17:05:52,390 - INFO - Connected by ('192.168.27.40', 52741)
+2025-04-20 17:05:58,979 - INFO - User ID received: user1
+2025-04-20 17:06:00,926 - INFO - Password pass1received for user user1
+2025-04-20 17:06:00,927 - INFO - User user1 authenticated successfully
+2025-04-20 17:06:05,946 - INFO - Request received: BALA
+2025-04-20 17:06:05,947 - INFO - Balance queried for user user1: 99312
+2025-04-20 17:06:32,053 - INFO - Request received: WDRA 10000
+2025-04-20 17:06:32,054 - INFO - Withdrawal successful for user user1. Amount: 10000, New Balance: 89312
+2025-04-20 17:06:35,338 - INFO - Request received: BALA
+2025-04-20 17:06:35,338 - INFO - Balance queried for user user1: 89312
+2025-04-20 17:06:43,624 - INFO - Request received: WDRA 100000
+2025-04-20 17:06:43,625 - WARNING - Insufficient balance for user user1. Requested amount: 100000
+2025-04-20 17:06:47,518 - INFO - Request received: BYE
+2025-04-20 17:06:47,518 - INFO - User user1 disconnected
+2025-04-20 17:06:47,519 - INFO - Disconnected by ('192.168.27.40', 52741)
+2025-04-20 17:07:00,315 - INFO - Connected by ('192.168.27.40', 52765)
+2025-04-20 17:08:46,298 - INFO - User ID received: user1
+2025-04-20 17:08:46,621 - INFO - Password pass1received for user user1
+2025-04-20 17:08:46,621 - INFO - User user1 authenticated successfully
+2025-04-20 17:09:15,179 - INFO - Request received: BALA
+2025-04-20 17:09:15,179 - INFO - Balance queried for user user1: 89312
+2025-04-20 17:10:39,560 - INFO - Request received: WDRA 10000
+2025-04-20 17:10:39,560 - INFO - Withdrawal successful for user user1. Amount: 10000, New Balance: 79312
+2025-04-20 17:10:46,138 - INFO - Request received: BALA
+2025-04-20 17:10:46,139 - INFO - Balance queried for user user1: 79312
+2025-04-20 17:10:51,330 - INFO - Request received: BALA
+2025-04-20 17:10:51,332 - INFO - Balance queried for user user1: 79312
+2025-04-20 17:11:14,086 - INFO - Request received: BYE
+2025-04-20 17:11:14,086 - INFO - User user1 disconnected
+2025-04-20 17:11:14,086 - INFO - Disconnected by ('192.168.27.40', 52765)
+2025-05-19 21:37:59,896 - INFO - Server started on port 2525
+2025-05-19 21:40:17,229 - INFO - Connected by ('192.168.138.64', 59109)
+2025-05-19 21:40:17,229 - INFO - User ID received: user1
+2025-05-19 21:40:17,229 - WARNING - Invalid user ID: user1
+2025-05-19 21:40:17,230 - INFO - Disconnected by ('192.168.138.64', 59109)
+2025-05-19 21:40:20,222 - INFO - Connected by ('192.168.138.137', 56572)
+2025-05-19 21:40:20,222 - INFO - User ID received: user1
+2025-05-19 21:40:20,223 - WARNING - Invalid user ID: user1
+2025-05-19 21:40:20,223 - INFO - Disconnected by ('192.168.138.137', 56572)
+2025-05-19 21:40:32,899 - INFO - Connected by ('192.168.138.137', 56573)
+2025-05-19 21:40:32,899 - INFO - User ID received: user1
+2025-05-19 21:40:32,899 - WARNING - Invalid user ID: user1
+2025-05-19 21:40:32,899 - INFO - Disconnected by ('192.168.138.137', 56573)
+2025-05-19 21:40:43,305 - INFO - Connected by ('192.168.138.137', 56577)
+2025-05-19 21:40:43,305 - INFO - User ID received: user1
+2025-05-19 21:40:43,306 - WARNING - Invalid user ID: user1
+2025-05-19 21:40:43,306 - INFO - Disconnected by ('192.168.138.137', 56577)
+2025-05-19 21:41:08,918 - INFO - Connected by ('192.168.138.137', 56581)
+2025-05-19 21:41:08,918 - INFO - User ID received: user1
+2025-05-19 21:41:08,918 - WARNING - Invalid user ID: user1
+2025-05-19 21:41:08,919 - INFO - Disconnected by ('192.168.138.137', 56581)
+2025-05-19 21:41:48,035 - INFO - Connected by ('192.168.138.64', 59279)
+2025-05-19 21:41:48,036 - INFO - User ID received: user1
+2025-05-19 21:41:48,036 - WARNING - Invalid user ID: user1
+2025-05-19 21:41:48,036 - INFO - Disconnected by ('192.168.138.64', 59279)
+2025-05-19 21:44:19,181 - INFO - Connected by ('192.168.138.137', 56619)
+2025-05-19 21:44:19,181 - INFO - User ID received: user1
+2025-05-19 21:44:19,181 - WARNING - Invalid user ID: user1
+2025-05-19 21:44:19,182 - INFO - Disconnected by ('192.168.138.137', 56619)
+2025-05-19 21:44:27,627 - INFO - Connected by ('192.168.138.137', 56623)
+2025-05-19 21:44:27,627 - INFO - User ID received: user1
+2025-05-19 21:44:27,627 - WARNING - Invalid user ID: user1
+2025-05-19 21:44:27,627 - INFO - Disconnected by ('192.168.138.137', 56623)
+2025-05-19 21:44:44,461 - INFO - Connected by ('192.168.138.137', 56630)
+2025-05-19 21:44:44,461 - INFO - User ID received: user1
+2025-05-19 21:44:44,461 - WARNING - Invalid user ID: user1
+2025-05-19 21:44:44,461 - INFO - Disconnected by ('192.168.138.137', 56630)
+2025-05-19 21:48:34,911 - INFO - Connected by ('192.168.138.137', 56672)
+2025-05-19 21:48:34,911 - INFO - User ID received: user1
+2025-05-19 21:48:34,912 - WARNING - Invalid user ID: user1
+2025-05-19 21:48:34,912 - INFO - Disconnected by ('192.168.138.137', 56672)
+2025-05-19 21:49:18,926 - INFO - Connected by ('192.168.138.137', 56690)
+2025-05-19 21:49:18,926 - INFO - User ID received: 2023147820231474
+2025-05-19 21:49:18,966 - INFO - Password pass1received for user 2023147820231474
+2025-05-19 21:49:18,967 - INFO - User 2023147820231474 authenticated successfully
+2025-05-19 21:49:31,697 - INFO - Client ('192.168.138.137', 56690) disconnected
+2025-05-19 21:49:31,697 - INFO - Disconnected by ('192.168.138.137', 56690)
+2025-05-19 21:50:13,915 - INFO - Connected by ('192.168.138.137', 56703)
+2025-05-19 21:50:13,923 - INFO - User ID received: 2023147820231474
+2025-05-19 21:50:13,932 - INFO - Password pass1received for user 2023147820231474
+2025-05-19 21:50:13,933 - INFO - User 2023147820231474 authenticated successfully
+2025-05-19 21:50:47,464 - INFO - Request received: BALA
+2025-05-19 21:50:47,464 - INFO - Balance queried for user 2023147820231474: 79312
+2025-05-19 21:51:39,485 - INFO - Request received: WDRA 22222
+2025-05-19 21:51:39,485 - INFO - Withdrawal successful for user 2023147820231474. Amount: 22222, New Balance: 57090
+2025-05-19 21:51:58,959 - INFO - Request received: BALA
+2025-05-19 21:51:58,959 - INFO - Balance queried for user 2023147820231474: 57090
+2025-05-19 21:52:16,946 - INFO - Request received: BALA
+2025-05-19 21:52:16,947 - INFO - Balance queried for user 2023147820231474: 57090
+2025-05-19 21:52:37,264 - INFO - Request received: WDRA 600000
+2025-05-19 21:52:37,265 - WARNING - Insufficient balance for user 2023147820231474. Requested amount: 600000
+2025-05-19 21:53:12,450 - INFO - Request received: BYE
+2025-05-19 21:53:12,450 - INFO - User 2023147820231474 disconnected
+2025-05-19 21:53:12,450 - INFO - Disconnected by ('192.168.138.137', 56703)
+2025-05-19 21:55:26,233 - INFO - Connected by ('192.168.138.141', 54907)
+2025-05-19 21:55:26,233 - INFO - User ID received: 2023147820231474
+2025-05-19 21:55:26,298 - INFO - Password pass1received for user 2023147820231474
+2025-05-19 21:55:26,298 - INFO - User 2023147820231474 authenticated successfully
+2025-05-19 21:55:31,724 - INFO - Request received: BALA
+2025-05-19 21:55:31,725 - INFO - Balance queried for user 2023147820231474: 57090
+2025-05-19 21:55:35,538 - INFO - Request received: WDRA 34
+2025-05-19 21:55:35,538 - INFO - Withdrawal successful for user 2023147820231474. Amount: 34, New Balance: 57056
+2025-05-19 21:55:39,097 - INFO - Request received: BYE
+2025-05-19 21:55:39,097 - INFO - User 2023147820231474 disconnected
+2025-05-19 21:55:39,097 - INFO - Disconnected by ('192.168.138.141', 54907)
+2025-05-19 21:57:52,988 - INFO - Connected by ('192.168.138.141', 57387)
+2025-05-19 21:57:52,988 - INFO - User ID received: 2023147820231474
+2025-05-19 21:57:53,001 - INFO - Password pass1received for user 2023147820231474
+2025-05-19 21:57:53,001 - INFO - User 2023147820231474 authenticated successfully
+2025-05-19 21:57:57,253 - INFO - Request received: WDRA 3424
+2025-05-19 21:57:57,253 - INFO - Withdrawal successful for user 2023147820231474. Amount: 3424, New Balance: 53632
+2025-05-19 21:57:59,179 - INFO - Request received: BYE
+2025-05-19 21:57:59,179 - INFO - User 2023147820231474 disconnected
+2025-05-19 21:57:59,179 - INFO - Disconnected by ('192.168.138.141', 57387)
+2025-05-19 22:06:45,771 - INFO - Connected by ('192.168.138.64', 61732)
+2025-05-19 22:06:45,771 - INFO - User ID received: 2023147820231474
+2025-05-19 22:06:54,813 - INFO - Password pass1received for user 2023147820231474
+2025-05-19 22:06:54,813 - INFO - User 2023147820231474 authenticated successfully
+2025-05-19 22:07:00,528 - INFO - Request received: WDRA 90
+2025-05-19 22:07:00,529 - INFO - Withdrawal successful for user 2023147820231474. Amount: 90, New Balance: 53542
+2025-05-19 22:07:00,540 - INFO - Request received: BALA
+2025-05-19 22:07:00,540 - INFO - Balance queried for user 2023147820231474: 53542
+2025-05-19 22:07:45,525 - INFO - Request received: BALA
+2025-05-19 22:07:45,525 - INFO - Balance queried for user 2023147820231474: 53542
+2025-05-19 22:07:50,952 - INFO - Request received: WDRA 900
+2025-05-19 22:07:50,952 - INFO - Withdrawal successful for user 2023147820231474. Amount: 900, New Balance: 52642
+2025-05-19 22:07:50,964 - INFO - Request received: BALA
+2025-05-19 22:07:50,965 - INFO - Balance queried for user 2023147820231474: 52642
+2025-05-19 22:07:59,656 - INFO - Request received: BYE
+2025-05-19 22:07:59,656 - INFO - User 2023147820231474 disconnected
+2025-05-19 22:07:59,657 - INFO - Disconnected by ('192.168.138.64', 61732)
+2025-05-19 22:08:32,955 - INFO - Connected by ('192.168.138.64', 61921)
+2025-05-19 22:08:32,956 - INFO - User ID received: 2023147820231474
+2025-05-19 22:08:53,106 - INFO - Password pass1received for user 2023147820231474
+2025-05-19 22:08:53,106 - INFO - User 2023147820231474 authenticated successfully
+2025-05-19 22:09:01,102 - INFO - Request received: BALA
+2025-05-19 22:09:01,102 - INFO - Balance queried for user 2023147820231474: 52642
+2025-05-19 22:09:33,258 - INFO - Client ('192.168.138.64', 61921) disconnected
+2025-05-19 22:09:33,259 - INFO - Disconnected by ('192.168.138.64', 61921)
+2025-05-19 22:31:00,996 - INFO - Connected by ('192.168.138.141', 57341)
+2025-05-19 22:31:00,997 - INFO - User ID received: 2023147820231474
+2025-05-19 22:31:01,004 - INFO - Password pass1received for user 2023147820231474
+2025-05-19 22:31:01,005 - INFO - User 2023147820231474 authenticated successfully
+2025-05-19 22:31:18,135 - INFO - Request received: BALA
+2025-05-19 22:31:18,135 - INFO - Balance queried for user 2023147820231474: 52642
+2025-05-19 22:31:51,825 - INFO - Request received: WDRA 333
+2025-05-19 22:31:51,825 - INFO - Withdrawal successful for user 2023147820231474. Amount: 333, New Balance: 52309
+2025-05-19 22:32:17,938 - INFO - Request received: BALA
+2025-05-19 22:32:17,938 - INFO - Balance queried for user 2023147820231474: 52309
+2025-05-19 22:32:28,894 - INFO - Request received: BYE
+2025-05-19 22:32:28,894 - INFO - User 2023147820231474 disconnected
+2025-05-19 22:32:28,894 - INFO - Disconnected by ('192.168.138.141', 57341)
